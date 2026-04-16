@@ -1,0 +1,183 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Ingres\CycleCountService - Copy.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.1.1" />
+    <PackageReference Include="System.Data.Odbc" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Abstractions\Abstractions.csproj" />
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Models\Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Actian.Client">
+      <HintPath>C:\Users\Irosh\Desktop\Action\Action\Actian.Client.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Ingres\SQLResources\BoneRoasterSQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BoneRoasterSQL.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\CatalogSQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CatalogSQL.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\CountPickSQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CountPickSQL.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\CycleCountSQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CycleCountSQL.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\GLAccountSQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GLAccountSQL.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\IssueSQL - Copy.Designer.cs">
+      <DependentUpon>IssueSQL.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\IssueSQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>IssueSQL.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\JobSQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>JobSQL.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\LoadingSQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LoadingSQL.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\LoginSQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LoginSQL.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\PickingSQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PickingSQL.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\PutAwaySQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PutAwaySQL.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\RawMaterialSQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>RawMaterialSQL.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\ReplenishSQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ReplenishSQL.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\StockSQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StockSQL.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\StockTransferSQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StockTransferSQL.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Ingres\SQLResources\UtilitySQL.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UtilitySQL.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Ingres\SQLResources\BoneRoasterSQL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BoneRoasterSQL.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingres\SQLResources\CatalogSQL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatalogSQL.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingres\SQLResources\CountPickSQL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CountPickSQL.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingres\SQLResources\CycleCountSQL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CycleCountSQL.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingres\SQLResources\GLAccountSQL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GLAccountSQL.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingres\SQLResources\JobSQL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>JobSQL.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingres\SQLResources\RawMaterialSQL.resx">
+      <LastGenOutput>RawMaterialSQL.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingres\SQLResources\LoadingSQL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoadingSQL.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingres\SQLResources\LoginSQL.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoginSQL.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingres\SQLResources\PickingSQL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PickingSQL.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingres\SQLResources\PutAwaySQL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PutAwaySQL.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingres\SQLResources\ReplenishSQL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReplenishSQL.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingres\SQLResources\IssueSQL.resx">
+      <LastGenOutput>IssueSQL.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingres\SQLResources\StockSQL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StockSQL.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingres\SQLResources\StockTransferSQL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StockTransferSQL.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingres\SQLResources\UtilitySQL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UtilitySQL.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
